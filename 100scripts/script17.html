@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<title>My Example</title>
+
+
+<p id="msg"></p>
+
+<script>
+    var i = 2;
+    var output = "";
+    while (i <= 10) { //внешний круг который считает количество таблиц и первую цифру таблицы
+        output += "<ul>";
+        output += "<h1>" + i + " table for </h1>";
+
+        var j = 2;
+        while (j <= 10) { //внутрений круг что считает цифры в таблице
+            output += "<li>" + i + "*" + j + "=" + j * i; //была запара с тегом <li> в итоге 
+            j++; //<li> используется для создания элементов списка
+        }
+        i++;
+        output += "</ul>"; //чуть задолбался но норм 
+    }
+    document.getElementById("msg").innerHTML = output; // напарник по работе раздражает жестко
+</script>
