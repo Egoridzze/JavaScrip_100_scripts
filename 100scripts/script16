@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<title>My Example</title>
+
+
+<p id="msg"></p>
+
+<script>
+  // Set variables
+  var output = "";
+
+  // Outer loop
+  for (i = 2; i <= 10; i++) {
+
+   
+    output += "<ul>";
+
+    // Inner loop
+    for (j = 2; j <= 10; j++) {
+      output += "<li>" + j + " x " + i + " = " +  i * j;
+    }
+
+    output += "</ul>";
+
+  }
+
+  // Output results to the above HTML element
+  document.getElementById("msg").innerHTML = output;
+</script>
