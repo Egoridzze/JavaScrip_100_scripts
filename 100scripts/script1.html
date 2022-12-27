@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<title>My Example</title>
+<p id="msg"></p>
+
+<script>
+  // Set variables
+  var person ={
+    name: "Egor",
+    surname: "Elfimov",
+    age: "31",
+    gmail: "eel@gmail.com"
+  };
+  var output = "";
+
+  for (var prop in person) {
+    output += prop + ": "+ person[prop]
+    + "<br>";
+  }
+  
+  document.getElementById("msg").innerHTML = output;
+
+  
+    
+  </script>
+</head>
+</html>

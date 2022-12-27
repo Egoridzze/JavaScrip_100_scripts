@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .btn {
+            font-style: italic;
+            color: burlywood;
+            background-color: greenyellow;
+            width: 100px;
+            height: 50px;
+            border: gold;
+        }
+    </style>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "paragraph was changed.";
+        }
+    </script>
+</head>
+
+<body>
+
+
+
+    <p id="demo">Paragraph</p>
+
+    <button class="btn" type="button" onclick="myFunction()">change paragraph</button>
+
+    <button class="btn" type="button" onclick="document.getElementById('demo').style.display='none'">delite paragraph</button>
+
+</body>
+
+</html>

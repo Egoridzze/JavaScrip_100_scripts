@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<title>My Example</title>
+<p id="msg"></p>
+
+<script>
+    // Set variables
+    var myBankBalance = 0;
+    var output = "";
+
+    // Do the 'while' loop
+    while (myBankBalance <= 10) {
+        myBankBalance++;
+        if (myBankBalance === 5) {
+            continue;
+        }
+        output += `  ${myBankBalance}  <br>`;
+
+    }
+
+    document.getElementById("msg").innerHTML = output;
+</script>
+</head>
+
+</html>
